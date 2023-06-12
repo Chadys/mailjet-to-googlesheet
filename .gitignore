@@ -1,0 +1,4 @@
+# Project specific
+secrets.env
+credentials.json
+token.json

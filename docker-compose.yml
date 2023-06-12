@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  main:
+    build: .
+    image: gitlab.amarena.ovh:4567/amarena/dev/data-connectors:develop
+    volumes:
+      - .:/code
+    command: python main.py
+    env_file:
+      - ./secrets.env
